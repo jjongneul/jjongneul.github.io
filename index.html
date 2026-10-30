@@ -1860,7 +1860,7 @@ function openArticle(i) {
   send.onclick = post; inp.addEventListener("keydown", e => { if (e.key === "Enter" && !e.isComposing) post(); });
   cin.append(inp, send); box.append(cin, cms);
   a.comments.forEach(c => addCm(c));
-  box.appendChild(el("div", "nv-note", "※ 이 화면의 기사·언론사·댓글은 모두 가상입니다."));
+  box.appendChild(el("div", "nv-note", ""));
   $("nv-scroll").scrollTop = 0;
   openSub("naver", "naver-art");
 }
